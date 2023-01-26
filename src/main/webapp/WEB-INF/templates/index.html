@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+    <h1>hello</h1>
+<a th:href="@{/target}">访问目标页面target.html</a>
+
+    <form th:action="@{/test}" method="get">
+        <input type="submit" value="get"/>
+    </form>
+    <form th:action="@{/test}" method="post">
+        <input type="submit" value="post"/>
+    </form>
+</body>
+</html>
